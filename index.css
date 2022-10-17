@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;1,300;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins,sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.bg a{
+    text-decoration: none;
+    width: 250px;
+    padding: 10px;
+    background-color:#fff;
+    color: #000;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 20px;
+}
+.bg{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(to right,rgba(0,0,0,0.4),rgba(0,0,0,0.5)),url(./bgcal.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+
+}
+
+.bg h1{
+    letter-spacing: 2px;
+    font-size: 80px;
+
+}
+.bg p{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.data{
+    padding: 2% 6%;
+    padding: 50px;
+    min-height: 100vh;
+    background-color: #E9E4F0;
+}
+.card
+{
+    width: 250px;
+    height: 200px;
+    background-color:#fff;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    padding-top: 10px;
+    background-position: center;
+    background-size: cover;
+    transition: .3s;
+}
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 25px;
+}
+.dept
+{
+    width: 100%;
+    min-height: 100vh;
+    padding: 2% 6%;
+    display: grid;
+    margin-top: 35px;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+.cse{
+    background-image: url(./cse.jpg);
+}
+.it{
+    background-image: url(./it.jpg);
+}
+.ece{
+    background-image: url(./ece.jpg);
+}
+.civil{
+    background-image: url(./civil.jpg);
+}
+.mech{
+    background-image: url(./mech.jpg);
+}
+.eee{
+    background-image: url(./eee.jpg);
+}
+.ice{
+    background-image: url(./ice.jpg);
+}
+
+
+
+
+
+/* ============================================================ */
+@media(max-width:700px){
+    
+.bg h1{
+    letter-spacing: 2px;
+    font-size: 50px;
+}
+.bg p{
+    font-size: 15px;
+
+}
+.card{
+    margin: auto;
+}
+
+}
