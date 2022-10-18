@@ -104,18 +104,65 @@ html{
 
 
 /* ============================================================ */
-@media(max-width:700px){
+@media(max-width:415px){
     
 .bg h1{
-    letter-spacing: 2px;
-    font-size: 50px;
+    font-size: 30px;
+}
+.bg{
+    text-align: center;
 }
 .bg p{
     font-size: 15px;
-
 }
 .card{
     margin: auto;
 }
+.bg span{
+    color: rgb(51, 218, 236);
+    animation: textcolor 3s infinite;
+}
+@keyframes textcolor {
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        filter: hue-rotate(0deg);
+    }
+    
+}
 
 }
+@media(max-width:700px){
+    
+    .bg h1{
+        letter-spacing: 2px;
+        font-size: 50px;
+    }
+    .bg p{
+        font-size: 15px;
+    
+    }
+    .card{
+        margin: auto;
+    }
+    .bg span{
+        color: rgb(51, 218, 236);
+        animation: textcolor 3s infinite;
+    }
+    @keyframes textcolor {
+        0%{
+            filter: hue-rotate(0deg);
+        }
+        50%{
+            filter: hue-rotate(360deg);
+        }
+        100%{
+            filter: hue-rotate(0deg);
+        }
+        
+    }
+    }
