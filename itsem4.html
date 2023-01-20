@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA calculator for Anna University Students</title>
+    <link rel="stylesheet" href="./stylegpa.css">
+</head>
+<body>
+    
+<!-- ================================================================================ -->
+    <div class="view">
+        <div class="box">
+            <h3>GPA Calculator</h3>
+            <p>4th Semester</p>
+            
+            <div class="sub">
+                <label for="#"><span>CS3452</span>-Theory of Computation</label><br>
+                <input type="radio" name="m1" value="10">O
+                <input type="radio" name="m1" value="9">A+
+                <input type="radio" name="m1"  value="8">A
+                <input type="radio" name="m1" value="7">B+
+                <input type="radio" name="m1"  value="6">B
+                <input type="radio" name="m1"  value="5">C
+                <input type="radio" name="m1"  value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for="#"><span>CS3491</span>-Artificial Intelligence and Machine Learning</label><br>
+                <input type="radio" name="m2"  value="10">O
+                <input type="radio" name="m2"  value="9">A+
+                <input type="radio" name="m2"  value="8">A
+                <input type="radio" name="m2"  value="7">B+
+                <input type="radio" name="m2"  value="6">B
+                <input type="radio" name="m2"  value="5">C
+                <input type="radio" name="m2"  value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for="#"><span>CS3492</span>-Database Management Systems</label><br>
+                <input type="radio" name="m3" value="10">O
+                <input type="radio" name="m3"  value="9">A+
+                <input type="radio" name="m3"  value="8">A
+                <input type="radio" name="m3"  value="7">B+
+                <input type="radio" name="m3"  value="6">B
+                <input type="radio" name="m3"  value="5">C
+                <input type="radio" name="m3"  value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for="#"><span>IT3401</span>-Web Essentials</label><br>
+                <input type="radio" name="m4" value="10">O
+                <input type="radio" name="m4" value="9">A+
+                <input type="radio" name="m4"  value="8">A
+                <input type="radio" name="m4" value="7">B+
+                <input type="radio" name="m4"  value="6">B
+                <input type="radio" name="m4"  value="5">C
+                <input type="radio" name="m4"  value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for="#"><span>CS3451</span>-Introduction to Operating Systems</label><br>
+                <input type="radio" name="m5" value="10">O
+                <input type="radio" name="m5" value="9">A+
+                <input type="radio" name="m5"  value="8">A
+                <input type="radio" name="m5" value="7">B+
+                <input type="radio" name="m5"  value="6">B
+                <input type="radio" name="m5"  value="5">C
+                <input type="radio" name="m5"  value="0">U
+                
+            </div>
+            
+            <div class="sub">
+                <label for="#"><span>GE3451</span>-Environmental Sciences And Sustainability</label><br>
+                <input type="radio" name="m6" value="10">O
+                <input type="radio" name="m6"  value="9">A+
+                <input type="radio" name="m6" value="8">A
+                <input type="radio" name="m6"  value="7">B+
+                <input type="radio" name="m6"  value="6">B
+                <input type="radio" name="m6"  value="5">C
+                <input type="radio" name="m6"  value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for="#"><span>CS3461</span>-Operating Systems Laboratory</label><br>
+                <input type="radio" name="m7" value="10">O
+                <input type="radio" name="m7"  value="9">A+
+                <input type="radio" name="m7" value="8">A
+                <input type="radio" name="m7"  value="7">B+
+                <input type="radio" name="m7"  value="6">B
+                <input type="radio" name="m7"  value="5">C
+                <input type="radio" name="m7"  value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for="#"><span>CS3461</span>-Database Management Systems Laboratory</label><br>
+                <input type="radio" name="m8" value="10">O
+                <input type="radio" name="m8"  value="9">A+
+                <input type="radio" name="m8" value="8">A
+                <input type="radio" name="m8"  value="7">B+
+                <input type="radio" name="m8"  value="6">B
+                <input type="radio" name="m8"  value="5">C
+                <input type="radio" name="m8"  value="0">U
+                
+            </div>
+            
+            
+            <button class="btn" id="btn" onclick="display()">Calculate</button><br>
+            <button class="btn" id="btn1" onclick="reset()">Reset</button><br>
+            <h2 id="result"></h2>
+            <h4 id="name" ></h4>
+            <p id="cs"></p>
+         </div>
+    
+    </div>
+</div>
+<script src="./csesem4.js">
+    
+</script>
+</body>
+</html>

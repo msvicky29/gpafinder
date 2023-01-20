@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Semester</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    :root{
+        --light-color:#24ead2;
+        --white:#fff;
+    }
+    .container{
+        width: 100%;
+        height: 100vh;
+        background:linear-gradient(135deg,#70e7f6,#b5e47d);
+        display: flex;
+        align-items:center;
+        justify-content: center;
+    }
+    .card{
+        padding: 20px;
+        min-height: 80vh;
+        width: 300px;
+        background-color:var(--white);
+        display: flex;
+        align-items:center;
+        justify-content: center;
+        flex-direction: column;
+        border: 5px solid transparent;
+        border-radius: 15px;
+        /* border-image: linear-gradient(45deg,#ff0,#f0f);
+        border-image-slice: 1; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+    .card a{
+        width: 12em;
+  height: 40px;
+  color: rgb(0, 0, 0);
+  border-radius: 5px;
+  padding: 10px 25px;
+  text-align: center;
+  font-weight: 500;
+  background:var(--light-color);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  text-decoration: none;
+  margin: 10px;
+    }
+    .btn-2 {
+  background: rgb(96,9,240);
+  background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+  border: none;
+  
+}
+.btn-2:before {
+  height: 0%;
+  width: 2px;
+}
+.btn-2:hover {
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+}
+    
+</style>
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>ECE Department</h3>
+        <a href="./tamil.html" class="btn-2">Semester 1</a>
+        <a href="./ecesem2.html" class="btn-2">Semester 2</a>
+        <a href="./ecesem3.html" class="btn-2">Semester 3</a>
+        <a href="./ecesem4.html" class="btn-2">Semester 4</a>
+        <a href="./ecesem5.html" class="btn-2">Semester 5</a>
+        <a href="./ecesem6.html" class="btn-2">Semester 6</a>
+        <a href="./ecesem7.html" class="btn-2">Semester 7</a>
+        <a href="./finalsem.html" class="btn-2">Semester 8</a>
+    </div>
+
+    </div>
+    
+</body>
+</html>

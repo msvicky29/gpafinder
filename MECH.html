@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA calculator for Anna University Students</title>
+    <link rel="stylesheet" href="./stylegpa.css">
+</head>
+<body>
+    <div class="spinner" id="spinner"></div>
+<!-- ================================================================================ -->
+    <div class="view">
+        <div class="box">
+            <h3>GPA Calculator</h3>
+            <p>CSE 3rd Semester</p>
+            
+            <div class="sub">
+                <label for=""><span>MA3354</span>-Discrete Mathematics</label><br>
+                <input type="radio" name="maths" id="maths" class="O" value="10">O
+                <input type="radio" name="maths" id="maths1" class="Aa" value="9">A+
+                <input type="radio" name="maths" id="maths2" class="A" value="8">A
+                <input type="radio" name="maths" id="maths3" class="Bb" value="7">B+
+                <input type="radio" name="maths" id="maths4" class="B" value="6">B
+                <input type="radio" name="maths" id="maths5" class="U" value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for=""><span>CS3353</span>-Foundation of Data Science</label><br>
+                <input type="radio" name="science"  id="science" class="O" value="10">O
+                <input type="radio" name="science" id="science1" class="Aa"value="9">A+
+                <input type="radio" name="science" id="science2" class="A" value="8">A
+                <input type="radio" name="science" id="science3" class="Bb" value="7">B+
+                <input type="radio" name="science" id="science4" class="B" value="6">B
+                <input type="radio" name="science" id="science5" class="U" value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for=""><span>CS3351</span>-Data Structure</label><br>
+                <input type="radio" name="structure" id="structure" class="O" value="10">O
+                <input type="radio" name="structure" id="structure1" class="Aa" value="9">A+
+                <input type="radio" name="structure" id="structure2" class="A" value="8">A
+                <input type="radio" name="structure" id="structure3" class="Bb" value="7">B+
+                <input type="radio" name="structure" id="structure4" class="B" value="6">B
+                <input type="radio" name="structure" id="structure5" class="U" value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for=""><span>CS3391</span>-Object Oriented Programming</label><br>
+                <input type="radio" name="oop" id="oop" class="O" value="10">O
+                <input type="radio" name="oop" id="oop1" class="Aa" value="9">A+
+                <input type="radio" name="oop" id="oop2" class="A" value="8">A
+                <input type="radio" name="oop" id="oop3" class="Bb" value="7">B+
+                <input type="radio" name="oop" id="oop4" class="B" value="6">B
+                <input type="radio" name="oop" id="oop5" class="U" value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for=""><span>CS3352</span>-Digital Principle and Computer organization</label><br>
+                <input type="radio" name="digital" id="digital" class="O" value="10">O
+                <input type="radio" name="digital" id="digital1" class="Aa" value="9">A+
+                <input type="radio" name="digital" id="digital2" class="A" value="8">A
+                <input type="radio" name="digital" id="digital3" class="Bb" value="7">B+
+                <input type="radio" name="digital" id="digital4" class="B" value="6">B
+                <input type="radio" name="digital" id="digital5" class="U" value="0">U
+                
+            </div>
+            <div class="sub">
+                <label for=""><span>GE3361</span>-Professional Development</label><br>
+                <input type="radio" name="pd" id="pd" class="O" value="10">O
+                <input type="radio" name="pd" id="pd1" class="Aa" value="9">A+
+                <input type="radio" name="pd" id="pd2" class="A" value="8">A
+                <input type="radio" name="pd" id="pd3" class="Bb" value="7">B+
+                <input type="radio" name="pd" id="pd4" class="B" value="6">B
+                <input type="radio" name="pd" id="pd5" class="U" value="0">U
+                
+            </div><div class="sub">
+                <label for=""><span>CS3362</span>-Data Science Laboratory</label><br>
+                <input type="radio" name="dsclab" id="dsclab" class="O" value="10">O
+                <input type="radio" name="dsclab" id="dsclab1" class="Aa" value="9">A+
+                <input type="radio" name="dsclab" id="dsclab2" class="A" value="8">A
+                <input type="radio" name="dsclab" id="dsclab3" class="Bb" value="7">B+
+                <input type="radio" name="dsclab" id="dsclab4" class="B" value="6">B
+                <input type="radio" name="dsclab" id="dsclab5" class="U" value="0">U
+                
+            </div><div class="sub">
+                <label for=""><span>CS3361</span>-Data Structure Laboratory</label><br>
+                <input type="radio" name="dslab"  id="dslab"  class="O" value="10">O
+                <input type="radio" name="dslab"  id="dslab1"  class="Aa" value="9">A+
+                <input type="radio" name="dslab"  id="dslab2"  class="A" value="8">A
+                <input type="radio" name="dslab"  id="dslab3"  class="Bb" value="7">B+
+                <input type="radio" name="dslab"  id="dslab4"  class="B" value="6">B
+                <input type="radio" name="dslab"  id="dslab5"  class="U" value="0">U
+                
+            </div><div class="sub">
+                <label for=""><span>CS3381</span>-Object Oriented Programming Laboratory</label><br>
+                <input type="radio" name="ooplab"  id="ooplab"  class="O" value="10">O
+                <input type="radio" name="ooplab"  id="ooplab1"  class="Aa" value="9">A+
+                <input type="radio" name="ooplab"  id="ooplab2"  class="A" value="8">A
+                <input type="radio" name="ooplab"  id="ooplab3"  class="Bb" value="7">B+
+                <input type="radio" name="ooplab"  id="ooplab4"  class="B" value="6">B
+                <input type="radio" name="ooplab"  id="ooplab5"  class="U" value="0">U
+                
+            </div>
+            
+            <button class="btn" id="btn" onclick="display()">Calculate</button><br>
+            <button class="btn" id="btn" onclick="clear()">Reset</button><br>
+            <h2 id="result"></h2>
+            <h4 id="name" ></h4>
+        <p id="cs"></p>
+         </div>
+    
+    </div>
+</div>
+<script src="./newtest.js"></script>
+</body>
+</html>

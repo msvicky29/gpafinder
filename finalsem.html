@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA calculator for Anna University Students</title>
+    <link rel="stylesheet" href="./stylegpa.css">
+</head>
+<body>
+    
+<!-- ================================================================================ -->
+    <div class="view">
+        <div class="box">
+            <h3>GPA Calculator</h3>
+            <p>8th Semester</p>
+            
+            <div class="sub">
+                <label for="#"><span></span>Project work/Internship</label><br>
+                <input type="radio" name="m1" value="10">O
+                <input type="radio" name="m1" value="9">A+
+                <input type="radio" name="m1"  value="8">A
+                <input type="radio" name="m1" value="7">B+
+                <input type="radio" name="m1"  value="6">B
+                <input type="radio" name="m1"  value="5">C
+                <input type="radio" name="m1"  value="0">U
+                
+            </div>
+            
+            
+            <button class="btn" id="btn" onclick="display()">Calculate</button><br>
+            <button class="btn" id="btn1" onclick="reset()">Reset</button><br>
+            <h2 id="result"></h2>
+            <h4 id="name" ></h4>
+            <p id="cs"></p>
+         </div>
+    
+    </div>
+</div>
+<script>
+    const mark1=document.getElementsByName('m1');
+    var m1;
+    function display()
+    {
+for( var i=0;i<mark1.length;i++){
+    if(mark1[i].checked)
+        m1 = finder(mark1[i].value);
+    }
+    
+    
+if(m1==null)
+{
+    alert("Select the grade!")
+}
+else{
+    var credits=m1*10;
+    var total=credits/10;
+    document.getElementById("result").innerHTML="Your GPA is:<br>"+total.toPrecision(3);
+document.getElementById("name").innerText="Coded by Vigneswaraa MS";
+document.getElementById("cs").innerText="CSE-Department";
+}
+}
+
+function finder(x){
+    var y;
+    if(x=="10"){
+       y= 10;
+   }
+   if(x=="9"){
+    y= 9;
+   }
+   if(x=="8"){
+    y= 8;
+   }
+   if(x=="7"){
+    y= 7;
+}
+if(x=="6"){
+    y= 6;
+}
+if(x=="5"){
+    y= 5;
+}
+if(x=="0"){
+    y= 0;
+}
+return y;
+}
+function reset(){
+    for(var i=0;i<mark1.length;i++){
+        mark1[i].checked=false;
+    }
+    document.getElementById("result").innerHTML="";
+document.getElementById("name").innerText="";
+document.getElementById("cs").innerText="";
+var m1=null;
+}
+
+</script>
+    
+</script>
+</body>
+</html>
